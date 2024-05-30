@@ -1,0 +1,24 @@
+version: "3"
+
+tasks:
+  generate:
+    aliases:
+      - gen
+    desc: "Generate proto files"
+    cmds:
+    sources:
+      - .*.proto
+    generates:
+        - ./gen/go/**
+  start:
+    aliases:
+      - start
+    desc: "Starts all services and gateway"
+    cmds:
+      - go run "C:\Users\aruzhan one love\GolandProjects\api-gateway\cmd\api\main.go"
+      - go run "C:\Users\aruzhan one love\GolandProjects\sso\cmd\sso\main.go"
+      - go run "C:\Users\aruzhan one love\GolandProjects\catalogue-service\cmd\catalogue\main.go"
+  stop:
+    cmds:
+#      - netstat -ano
+      - findstr :8080 
