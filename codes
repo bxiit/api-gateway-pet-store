@@ -1,0 +1,17 @@
+OK -> 200 OK
+Cancelled -> 499 Client Closed Request
+Unknown -> 500 Internal Server Error
+InvalidArgument -> 400 Bad Request
+DeadlineExceeded -> 504 Gateway Timeout
+NotFound -> 404 Not Found
+AlreadyExists -> 409 Conflict
+PermissionDenied -> 403 Forbidden
+ResourceExhausted -> 429 Too Many Requests
+FailedPrecondition -> 400 Bad Request
+Aborted -> 409 Conflict
+OutOfRange -> 400 Bad Request
+Unimplemented -> 501 Not Implemented
+Internal -> 500 Internal Server Error
+Unavailable -> 503 Service Unavailable
+DataLoss -> 500 Internal Server Error
+Unauthenticated -> 401 Unauthorized
